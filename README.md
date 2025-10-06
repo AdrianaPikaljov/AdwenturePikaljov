@@ -17,5 +17,4 @@
 --protseduuri loomine kohaliku tabeli loomiseks
 <img width="971" height="519" alt="{A77D1135-8156-4F7C-8F9D-AB92943A2215}" src="https://github.com/user-attachments/assets/2cbac16e-d910-41bd-9477-82beeb43b69d" />
 --üldise tulu indeksi loomine ja indeksi labivaatus
-<img width="1270" height="417" alt="{1192CD1F-D49C-43B9-9D69-471C5D5B0BBD}" src="https://github.com/user-attachments/assets/1792a0c0-fa6f-4f6a-8ba0-2c02a47114be" />
-
+<img width="446" height="257" alt="dfsfffff" src="https://github.com/user-attachments/assets/365c2eb0-757d-4d54-94cb-b6cd0e8a5a9a" />
