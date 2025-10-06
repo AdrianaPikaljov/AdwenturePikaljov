@@ -40,3 +40,10 @@ C:\Users\opilane\Desktop\AdwentureRadasheva>git commit -a -m "git käsude fail o
 C:\Users\opilane\Desktop\AdwentureRadasheva>git status
 On branch master
 nothing to commit, working tree clean
+
+git branch  adrianapikaljov
+git checkout adrianapikaljov
+git status
+git add .
+git commit -a -m "nimi on lisatud"
+git push 
