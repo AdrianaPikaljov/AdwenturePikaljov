@@ -39,3 +39,23 @@ go
 
 --kaivita funktrsiooni 
 select * from fn_MSTVF_GetEmployees()
+
+--33
+
+
+
+--Skaleeritav funktsioon ilma krüpteerimata:
+create function fn_getemployeenamebyId1(@employeekey int)
+returns nvarchar(20)
+as
+begin
+    return (
+        select firstname 
+        from dimemployee 
+        where employeekey = @employeekey
+    )
+end;
+go
+
+--kaivita funktrsiooni 
+select dbo.fn_getemployeenamebyid1(3);
