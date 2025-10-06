@@ -59,3 +59,23 @@ go
 
 --kaivita funktrsiooni 
 select dbo.fn_getemployeenamebyid1(3);
+
+--muudame funktsiooni ja krüpteerime selle ära:
+
+alter function fn_getemployeenamebyid1(@employeekey int)
+returns nvarchar(20)
+with encryption
+as
+begin
+    return (
+        select firstname 
+        from dimemployee 
+        where employeekey = @employeekey
+    );
+end;
+go
+
+
+--kaivita funktrsiooni 
+select dbo.fn_getemployeenamebyid1(10);
+
