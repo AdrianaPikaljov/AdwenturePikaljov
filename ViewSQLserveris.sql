@@ -59,3 +59,14 @@ join tblDepartment
 on tblEmployee.DepartmentId = tblDepartment.Deptld
 
 select * from vWEmployeesNonConfidentialData
+
+create view vWEmployeesCountByDepartment
+as 
+Select DeptName, Count(Id) as totalEmployees
+from tblEmployee
+join tblDepartment
+on tblEmployee.DepartmentId = tblDepartment.Deptld
+group by DeptName
+
+select * from vWEmployeesCountByDepartment
+
