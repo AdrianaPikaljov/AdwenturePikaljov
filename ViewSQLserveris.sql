@@ -79,8 +79,10 @@ from tblEmployee
 
 select * from vWEmployeesDataExceptSalary
 
-select * from vWEmployeesDataExceptSalary
 
 update vWEmployeesDataExceptSalary
 set Name = 'Adri' where Id = 2
+
+delete from vWEmployeesDataExceptSalary where Id = 2
+insert into vWEmployeesDataExceptSalary values (2, 'Mikey', 'Male', 2)
 
