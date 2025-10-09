@@ -18,3 +18,6 @@
 <img width="971" height="519" alt="{A77D1135-8156-4F7C-8F9D-AB92943A2215}" src="https://github.com/user-attachments/assets/2cbac16e-d910-41bd-9477-82beeb43b69d" />
 --üldise tulu indeksi loomine ja indeksi labivaatus
 <img width="446" height="257" alt="dfsfffff" src="https://github.com/user-attachments/assets/365c2eb0-757d-4d54-94cb-b6cd0e8a5a9a" />
+
+--38
+<img width="364" height="88" alt="{43D3CC44-B433-408A-B3FF-21D7B28DFBCF}" src="https://github.com/user-attachments/assets/452156f9-11a7-4acb-adf6-cbfa9c0208df" />
