@@ -87,3 +87,17 @@ select Id, Name, Gender from TableB
 
 select Id, Name , Gender from TableA
 where Id not in (select Id from TableB)
+
+
+select Id, Name, Gender from TableA
+except
+select Id, Name from TableB
+--kuvab vea 
+--Msg 205, Level 16, State 1, Line 223
+--All queries combined using a UNION, INTERSECT or EXCEPT operator must have an equal number of expressions in their target lists.
+
+select Id, Name , Gender from TableA
+where Id not in (select Id, Name from TableB)
+--kuvab vea 
+--Msg 116, Level 16, State 1, Line 231
+--Only one expression can be specified in the select list when the subquery is not introduced with EXISTS.
