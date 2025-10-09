@@ -86,3 +86,15 @@ set Name = 'Adri' where Id = 2
 delete from vWEmployeesDataExceptSalary where Id = 2
 insert into vWEmployeesDataExceptSalary values (2, 'Mikey', 'Male', 2)
 
+create view vwEmployeesDetailsByDepartment
+as 
+Select Id, Name, Salary, Gender,DeptName
+from tblEmployee
+join tblDepartment
+on tblEmployee.DepartmentId = tblDepartment.Deptld
+
+select * from vwEmployeesDetailsByDepartment
+
+update vwEmployeesDetailsByDepartment
+set DeptName = 'IT' where Name = 'John'
+
