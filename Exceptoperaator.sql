@@ -75,3 +75,15 @@ select Id, Name, Gender from TableB
 
 select Id, Name, Gender from TableA
 where Id not in (select Id from TableB)
+
+
+--sql kuvab vea: Violation of PRIMARY KEY constraint 'PK__TableA__3214EC07F86E728B'. Cannot insert duplicate key in object 'dbo.TableA'. The duplicate key value is (1).
+--panin id 9 et sql ei kuvaks vea ja ei pahandaks mu peale:((((
+insert into TableA values (1,'Mark', 'Male')
+
+select Id, Name, Gender from TableA
+except
+select Id, Name, Gender from TableB
+
+select Id, Name , Gender from TableA
+where Id not in (select Id from TableB)
