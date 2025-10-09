@@ -40,3 +40,11 @@ join tblDepartment
 on tblEmployee.DepartmentId = tblDepartment.Deptld
 
 select * from vWEmployeesByDepartment
+
+create view vWITDepartment_Employees
+as 
+Select Id, Name, Salary, Gender,DeptName
+from tblEmployee
+join tblDepartment
+on tblEmployee.DepartmentId = tblDepartment.Deptld
+where tblDepartment.DeptName = 'IT'
