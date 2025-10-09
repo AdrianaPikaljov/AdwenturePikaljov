@@ -48,3 +48,14 @@ from tblEmployee
 join tblDepartment
 on tblEmployee.DepartmentId = tblDepartment.Deptld
 where tblDepartment.DeptName = 'IT'
+
+select * from vWITDepartment_Employees
+
+create view vWEmployeesNonConfidentialData
+as 
+Select Id, Name, Gender,DeptName
+from tblEmployee
+join tblDepartment
+on tblEmployee.DepartmentId = tblDepartment.Deptld
+
+select * from vWEmployeesNonConfidentialData
