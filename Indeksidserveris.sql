@@ -101,3 +101,36 @@ execute sp_helpconstraint tblEmployee2;
 Create unique Index IX_tblEmployee_City
 On tblEmployee2(City)
 with ignore_dup_key
+
+--38
+ create table [tblEmployee]
+ ([Id] int primary key,
+ [FirstName] nvarchar(50),
+ [LastName] nvarchar(50),
+ [Salary] int,
+ [Gender] nvarchar(10),
+ [City] nvarchar(50)
+ )
+
+insert into tblEmployee values(1,'Mike', 'Sandoz',4500,'Male', 'New York')
+insert into tblEmployee values(2,'Sara', 'Menco',6500,'Female', 'London')
+insert into tblEmployee values(3,'John', 'Barber',2500,'Male', 'Sydney')
+insert into tblEmployee values(4,'Pam','Grove',3500,'Female', 'Toronto')
+insert into tblEmployee values(5,'James', 'Mirch',7500,'Male', 'London')
+select * from tblEmployee
+
+
+create NonClustered Index IX_tblEmployee_Salary
+on tblEmployee (Salary ASC)
+
+select * from tblEmployee where Salary > 4000 and Salary < 8000
+
+delete from tblEmployee where Salary = 2500
+update tblEmployee Set Salary = 9000 where Salary = 7500
+
+select * from tblEmployee order by Salary
+select * from tblEmployee order by Salary desc
+
+select Salary, count(Salary) as Total
+from tblEmployee
+group by Salary
