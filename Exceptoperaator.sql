@@ -66,3 +66,12 @@ select Id, Name, Gender, Salary
 from tblEmployees
 where Salary >=60000
 order by Name
+
+
+--88
+select Id, Name, Gender from TableA
+except
+select Id, Name, Gender from TableB
+
+select Id, Name, Gender from TableA
+where Id not in (select Id from TableB)
