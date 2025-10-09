@@ -70,3 +70,12 @@ group by DeptName
 
 select * from vWEmployeesCountByDepartment
 
+
+--40
+create view vWEmployeesDataExceptSalary
+as
+Select Id,Name,Gender,DepartmentId
+from tblEmployee
+
+select * from vWEmployeesDataExceptSalary
+
