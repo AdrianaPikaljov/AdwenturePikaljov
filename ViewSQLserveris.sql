@@ -79,3 +79,8 @@ from tblEmployee
 
 select * from vWEmployeesDataExceptSalary
 
+select * from vWEmployeesDataExceptSalary
+
+update vWEmployeesDataExceptSalary
+set Name = 'Adri' where Id = 2
+
