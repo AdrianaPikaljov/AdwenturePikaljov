@@ -56,3 +56,13 @@ Insert into tblEmployees values ('George', 'Male', 65000)
 Insert into tblEmployees values ('Tina', 'Female', 67000)
 Insert into tblEmployees values ('Ben', 'Male', 80000)
 Go
+
+
+select Id, Name, Gender, Salary
+from tblEmployees
+where Salary >=50000
+except
+select Id, Name, Gender, Salary
+from tblEmployees
+where Salary >=60000
+order by Name
