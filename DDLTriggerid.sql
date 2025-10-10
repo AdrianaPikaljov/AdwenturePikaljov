@@ -67,3 +67,10 @@ rollback
 print 'You cannot create, alter or drop a table in any database on the server'
 end
 
+disable trigger tr_ServerScopeTrigger on all server
+
+
+enable trigger tr_ServerScopeTrigger on all server
+
+
+drop trigger tr_ServerScopeTrigger on all server
