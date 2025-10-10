@@ -44,3 +44,26 @@ for rename
 as begin
 print 'you just renamed sm'
 end
+
+
+--93
+
+create trigger tr_DatabaseScopeTrigger
+on database
+for CREATE_TABLE, ALTER_TABLE, DROP_TABLE
+as
+begin
+rollback
+print 'You cannot create, alter or drop a table in the current database'
+end
+
+
+create trigger tr_ServerScopeTrigger
+on all server
+for CREATE_TABLE, ALTER_TABLE, DROP_TABLE
+as
+begin
+rollback
+print 'You cannot create, alter or drop a table in any database on the server'
+end
+
