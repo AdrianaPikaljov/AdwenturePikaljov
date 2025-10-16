@@ -63,5 +63,17 @@ paring kus on meelega veergude arv erinev ja paring mis tagastab mitu veergu
 
 
 <img width="875" height="230" alt="image" src="https://github.com/user-attachments/assets/d0fe6d82-2e4a-4e3a-b987-ba94162325dd" />
+--98
+
+--müügimaht kokku kahanevas järjekorras
+<img width="439" height="240" alt="{B921BBC6-4EA5-41FD-A190-C6C2022C2237}" src="https://github.com/user-attachments/assets/e40d3f11-a41c-47be-adf0-0632509bb605" />
+--kus müük kokku on suurem kui 1000€
+<img width="444" height="222" alt="{ACD805B4-4B7D-4D86-AA9B-A419B3CB417F}" src="https://github.com/user-attachments/assets/3951f8f5-d038-4f75-80c3-447387181502" />
+--süntaksiviga
+--Msg 156, Level 15, State 1, Line 30
+--Incorrect syntax near the keyword 'WHERE'.
+<img width="437" height="194" alt="{46DF92CB-0CF0-41AC-9C84-A57D437DF220}" src="https://github.com/user-attachments/assets/56321dc4-91a5-46df-960c-aeefc45adbf1" />
+--mis näitavad summat ning eemaldavad kõik tooted peale iPhone-i ja Speakerite
+<img width="464" height="206" alt="{672CBDDE-E276-49A1-A2F5-A16C39661E25}" src="https://github.com/user-attachments/assets/b07df1d6-c924-4831-8715-53bb6539d09f" />
 
 
